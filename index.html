@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APPS</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>RAK BUKU</h1>
+    </header>
+    <main>
+
+        <section class="utama">
+            <h1>MASUKAN JUDUL BUKU</h1>
+            <form id="inputBuku">
+                <div class="input">
+                    <label for="inputNama">Nama Buku</label>
+                    <input type="text" id="inputNama" required>
+                </div>
+                <div class="input">
+                    <label for="inputPenulis">Nama Penulis</label>
+                    <input type="text" id="inputPenulis" required>
+                </div>
+                <div class="input">
+                    <label for="inputTahun">Masukan Tahun</label>
+                    <input type="number" id="inputTahun" required>
+                </div>
+                <div class="tombol">
+                    <span><button id="belum">BELUM DIBACA</button></span>
+                    <span><button id="sudah">SUDAH DIBACA</button></span>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <section class="kedua">
+        <div class="belum-dibaca" id="belum-dibaca">
+            <h1 class="judul-belum">BELUM DIBACA</h1>
+            <div id="list-belum"></div>
+        </div>
+        <div class="sudah-dibaca" id="sudah-dibaca">
+            <h1 class="judul sudah">SUDAH DIBACA</h1>
+            <div id="list-sudah"></div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

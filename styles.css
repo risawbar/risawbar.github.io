@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+body {
+    background-color: #f0f2f5;
+}
+
+header > h1{
+    width: 316px;
+    background-color: #687EFF;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(11, 9, 9);
+}
+
+
+.utama {
+
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    background-color: #ffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.kedua {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tombol {
+    margin-top: 5px;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+}
+
+.belum-dibaca, .sudah-dibaca {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 10px;
+    align-self: start;
+    background-color: #ffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.belum-dibaca > h1, .sudah-dibaca > h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.inner {
+    background-color: #D2E0FB;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: large;
+    margin-bottom: 7px ;
+}
+
+.inner > .tombol-belum {
+    margin-right: 5px;
+    align-items: center;
+    background-color: #0A66C2;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+
+.inner > .tombol-sudah {
+    margin-right: 5px;
+    align-items: center;
+    background-color: #16c20a;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+
+.inner > .tombol-hapus {
+
+    margin-right: 5px;
+    align-items: center;
+    background-color: #c20a20;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+
+input {
+    border-radius: 50px;
+    border: none;
+    background-color: aliceblue;
+    padding: 12px;
+    font-size: large;
+    text-align: center;
+}
+
+#belum {
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+
+#sudah {
+    background: #29ab29;
+    border-radius: 999px;
+    box-shadow: #83ca71 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+
+
