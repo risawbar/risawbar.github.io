@@ -21,8 +21,6 @@ header > h1{
 
 
 .utama {
-
-    /* border: 1px solid black; */
     border-radius: 10px;
     padding: 10px;
     display: inline-flex;
@@ -220,4 +218,16 @@ input {
     border: 0;
 }
 
+@media screen and (max-width: 1200px) {
+    .kedua {
+        flex-direction: column;
+        
+        
+    }
+
+    .belum-dibaca, .sudah-dibaca {
+        align-self: center;
+        
+    }
+}
 
