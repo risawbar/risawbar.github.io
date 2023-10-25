@@ -22,8 +22,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     sudah.addEventListener('click', function(e) {
-        e.preventDefault();
-        tambahSudah();
+
+        if(inputn.value == "" || inputp.value == "" || inputt.value == "") {
+            alert('Kolom tidak boleh kosong');
+        } else {
+            e.preventDefault();
+            tambahSudah();
+            inputn.value = "";
+            inputp.value = "";
+            inputt.value = "";
+
+        }
+        
     })
 
     const arrIsi = [];
