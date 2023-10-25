@@ -1,10 +1,23 @@
 document.addEventListener('DOMContentLoaded', function () {
     const belum = document.getElementById('belum');
     const sudah = document.getElementById('sudah');
+    const inputn = document.getElementById('inputNama');
+    const inputp = document.getElementById('inputPenulis');
+    const inputt = document.getElementById('inputTahun');
 
     belum.addEventListener('click', function (e) {
-        e.preventDefault();
+        if(inputn.value == "" || inputp.value == "" || inputt.value == "") {
+            alert('Kolom tidak boleh kosong');
+        } else {
+         e.preventDefault();
         tambahBelum();
+        inputn.value = "";
+        inputp.value = "";
+        inputt.value = ""; 
+
+        }
+        
+        
         
     });
 
